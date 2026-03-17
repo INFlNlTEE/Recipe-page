@@ -1,5 +1,120 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* RESET */
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES (PRO MOVE) */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+/* BODY */
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  background-color: var(--stone-100);
+  color: var(--stone-600);
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.recipe-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* CARD */
+.recipe {
+  background: var(--white);
+  max-width: 700px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* IMAGE */
+.recipe-image {
+  width: 100%;
+  display: block;
+}
+
+/* CONTENT SPACING */
+.recipe-header,
+section {
+  padding: 1.5rem;
+}
+
+/* TITLE */
+.recipe-title {
+  font-family: 'Young Serif', serif;
+  font-size: 2rem;
+  color: var(--stone-900);
+  margin-bottom: 1rem;
+}
+
+/* PREP BOX */
+.preparation-time-container {
+  background: var(--rose-50);
+  margin: 0 1.5rem;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.preparation-time {
+  color: var(--rose-800);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* HEADINGS */
+h2 {
+  font-family: 'Young Serif', serif;
+  color: var(--brown-800);
+  margin-bottom: 1rem;
+}
+
+/* LISTS */
+ul, ol {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* INSTRUCTION TITLES */
+.ins-title {
+  font-weight: 700;
+  color: var(--stone-900);
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+th {
+  text-align: left;
+  color: var(--stone-600);
+}
+
+td {
+  color: var(--brown-800);
+  font-weight: 600;
 }
