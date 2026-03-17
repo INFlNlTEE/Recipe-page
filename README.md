@@ -24,6 +24,7 @@ The goal of this project is to practice:
 
 ## 🚀 Live Preview
 
+https://inflnltee.github.io/Recipe-page/
 
 ---
 
@@ -97,6 +98,4 @@ The design adapts across screen sizes:
 **Oghenetega Okoro**
 
 * Frontend Developer in training
-* Aspiring Full-Stack
-
----
+* Aspiring Full-Stack Developer
