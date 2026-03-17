@@ -45,6 +45,7 @@ body {
 .recipe-image {
   width: 100%;
   display: block;
+  border-radius: 16px;
 }
 
 /* CONTENT SPACING */
@@ -91,6 +92,11 @@ li {
   margin-bottom: 0.5rem;
 }
 
+li::marker {
+  color: var(--brown-800);
+  font-weight: bold;
+}
+
 /* INSTRUCTION TITLES */
 .ins-title {
   font-weight: 700;
@@ -117,4 +123,15 @@ th {
 td {
   color: var(--brown-800);
   font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .recipe {
+    margin: 0 10px;
+  }
+
+  .recipe-header,
+  section {
+    padding: 1rem;
+  }
 }
